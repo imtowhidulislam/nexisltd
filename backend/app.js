@@ -3,13 +3,14 @@ import cors from "cors";
 import bodyparser from "body-parser";
 import mongoose from "mongoose";
 import "dotenv/config";
-const app = express();
+import userRoutes from "./routes/userRoutes.js";
+const app = express();    
 const port = 3001;
 
 // ! Setting up the middleware???
 app.use(cors());
 app.use(bodyparser.json());
-app.use("/api", router);
+app.use("/api", userRoutes);
 
 // ? Connecting with the DB:::
 mongoose.connect(
