@@ -1,16 +1,21 @@
 import mongoose from "mongoose";
 
 const createUser = mongoose.Schema({
-    firstName: {
+    first_name: {
         type: String,
         required: true,
         trim: true,
     },
-    lastName: {
+    last_name: {
         type: String,
         required: true,
         trim: true,
       },
+    phone_number:{
+        type: String,
+        required: true,
+        trim: true,
+    },
     email: {
         type: String,
         required: true,
