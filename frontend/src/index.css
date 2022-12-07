@@ -16,3 +16,7 @@
     opacity: 1;
   }
 }
+
+.center{
+  height: calc(100vh - 76.86 px);
+}

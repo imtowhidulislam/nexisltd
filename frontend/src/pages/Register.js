@@ -13,20 +13,20 @@ const Register = () => {
         console.log(showForm);
     },[showForm])
   return (
-    <div className='flex items-center justify-center p-16 gap-8 '>
-        <div className='max-content'>
-            <img src={Illutration} alt="" />
-        </div>
-    <div>
-    <div className='bg-gray-50 p-8 rounded-lg drop-shadow-lg animateUp'>
-        { showForm ?  <Signup /> : <Login/> }
-        <div>
-            {showForm ? <p className='text-center capitalize text-gray-400'>Don't have any account? <span className='uppercase font-bold underline cursor-pointer text-blue-400 hover:text-blue-500 transition-colors' type="button" onClick={toggleForm} >signup here</span></p> : <p className='text-center capitalize text-gray-400'>already have an account? <span className='uppercase font-bold underline cursor-pointer text-blue-400 hover:text-blue-500 transition-colors' type="button" onClick={toggleForm} >login here</span></p>}
-            
+    <div className='grid place-items-center center'>
+        <div className='w-full max-w-6xl sm:grid grid-cols-grid-col place-items-center gap-4 px-4 py-8 md:p-8 md:gap-12'>
+            <div className='max-content mb-8 sm:mb-0'>
+                <img src={Illutration} alt="" />
+            </div>
+            <div className='bg-gray-50 p-8 rounded-lg drop-shadow-lg animateUp'>
+                { showForm ?  <Signup /> : <Login/> }
+                <div>
+                    {showForm ? <p className='text-center capitalize text-gray-400'>Don't have any account? <span className='uppercase font-bold underline cursor-pointer text-blue-400 hover:text-blue-500 transition-colors' type="button" onClick={toggleForm} >signup here</span></p> : <p className='text-center capitalize text-gray-400'>already have an account? <span className='uppercase font-bold underline cursor-pointer text-blue-400 hover:text-blue-500 transition-colors' type="button" onClick={toggleForm} >login here</span></p>}
+                    
+                </div>
+            </div>
         </div>
     </div>
-</div>
-</div>
   )
 }
 

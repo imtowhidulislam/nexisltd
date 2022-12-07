@@ -1,8 +1,11 @@
 import React from 'react'
+import UserForm from '../components/UserFrom'
 
 const Attendence = () => {
   return (
-    <div>Attendence</div>
+    <div className='grid place-items-center mt-8'>
+      <UserForm />
+    </div>
   )
 }
 
