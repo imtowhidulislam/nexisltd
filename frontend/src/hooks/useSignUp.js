@@ -28,7 +28,7 @@ const useSignUp = () => {
         if(response.ok){
             localStorage.setItem("useData", JSON.stringify(useData))
 
-            dispatch({type: "LOGIN", payload: useData})
+            // dispatch({type: "LOGIN", payload: useData})
             setIsLoading(false);
         }
 
