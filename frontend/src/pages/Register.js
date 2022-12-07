@@ -13,8 +13,9 @@ const Register = () => {
         console.log(showForm);
     },[showForm])
   return (
-    <div className='grid place-items-center center'>
-        <div className='w-full max-w-6xl sm:grid grid-cols-grid-col place-items-center gap-4 px-4 py-8 md:p-8 md:gap-12'>
+    <div className='flex items-center justify-center center bg-gray-100
+    '>
+        <div className='bg-cyan-500 w-full rounded-xl p-4 drop-shadow-2xl max-w-6xl sm:grid grid-cols-grid-col place-items-center gap-4 px-4 py-8 md:p-8 md:gap-12'>
             <div className='max-content mb-8 sm:mb-0'>
                 <img src={Illutration} alt="" />
             </div>

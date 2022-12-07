@@ -35,7 +35,7 @@ const Navbar = () => {
     
   return (
     <>
-        <div className='bg-blue-700 w-full text-gray-100 py-4 uppercase px-4' ref={navBar}>
+        <div className='bg-gray-200 w-full text-gray-100 py-4 uppercase px-4 md:px-20' ref={navBar}>
             <nav className="">
                 <ul className="flex items-center justify-between gap-4">
                     <div className='w-16'><img src={Logo} alt="logo" /></div>
@@ -45,13 +45,13 @@ const Navbar = () => {
                                 <li className="">
                                     <button
                                     onClick={logoutUser}
-                                    className="uppercase"
+                                    className="uppercase text-gray-700"
                                     >
                                     Logout
                                     </button>
                                 </li>
                             ) : (
-                                <li className="">
+                                <li className="text-gray-700">
                                     <Link className="" to="/">
                                         Register
                                     </Link>
@@ -59,7 +59,7 @@ const Navbar = () => {
                             )
                         }
                         
-                        <li className="">
+                        <li className="text-gray-700">
                             <Link className="" to="/attendence">
                             Attendence
                             </Link>

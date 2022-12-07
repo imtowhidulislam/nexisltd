@@ -23,7 +23,7 @@ const UserForm = () => {
         console.log(testData);
     },[])
   return (
-    <div className='w-full max-w-7xl px-16'>
+    <div className='w-full max-w-7xl px-16 '>
         <div className='grid place-items-center mb-8'> 
             <h2 className='capitalize w-max text-2xl font-bold bg-orange-500 p-4 rounded-xl text-white'>Attendence information</h2>
         </div>
