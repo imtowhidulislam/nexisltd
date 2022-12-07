@@ -42,20 +42,21 @@ const Navbar = () => {
                     <div className='flex gap-4'>
                         {
                             currUser ? (
-                                <li className="">
-                                    <button
-                                    onClick={logoutUser}
-                                    className="uppercase text-gray-700"
-                                    >
-                                    Logout
-                                    </button>
-                                </li>
+                              <li className="">
+                                  <button
+                                  onClick={logoutUser}
+                                  className="uppercase text-gray-700"
+                                  >
+                                  Logout
+                                  </button>
+                              </li>
                             ) : (
-                                <li className="text-gray-700">
-                                    <Link className="" to="/">
-                                        Register
-                                    </Link>
-                                </li>
+                              <li className="text-gray-700">
+                                  <Link className="" to="/">
+                                      Register
+                                  </Link>
+                              </li>
+                              
                             )
                         }
                         
